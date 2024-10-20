@@ -1,0 +1,538 @@
+﻿/*INDEX*/
+* {
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Rubik', sans-serif;
+    background-color: #000000;
+}
+
+header {
+    padding-top: 2%;
+    padding-right: 7%;
+    padding-bottom: 2%;
+    padding-left: 7%;
+    display: flex;
+    justify-content: space-between;
+}
+
+nav ul {
+    margin-top: 3%;
+}
+
+    nav ul li {
+        display: inline-block;
+    }
+
+        nav ul li a {
+            font-size: 1.2rem;
+            padding-right: 2rem;
+            text-transform: uppercase;
+        }
+
+            nav ul li a:hover {
+                text-decoration: underline;
+                font-weight: 800;
+            }
+
+a {
+    text-decoration: none;
+    color: #FFFFFF;
+}
+
+.icon {
+    display: none;
+}
+
+section {
+    width: 100%;
+    height: 100%;
+    justify-content: center;
+    align-items: center;
+    color: #FFFFFF;
+}
+
+.principal {
+    width: 100%;
+    height: 72vh;
+    display: flex;
+}
+
+    .principal div {
+        width: 100%;
+        height: auto;
+        background-image: url(../images/club_inicio.jpg);
+        background-size: cover;
+        background-repeat: no-repeat;
+        justify-content: center;
+        align-items: center;
+        display: flex;
+    }
+
+.bienvenida {
+    display: flex-block;
+    justify-content: center;
+    align-items: center;
+    padding: 2%;
+    text-align: center;
+}
+
+.secundario {
+    width: 70%;
+    display: flex;
+    align-items: flex-start;
+    padding: 3%;
+    margin-left: 15%;
+    margin-right: 15%;
+    text-align: center;
+}
+
+.izquierda {
+    display: flex; 
+    flex-direction: column; 
+    gap: 1.2em; 
+}
+
+    .izquierda img {
+        width: 100%; 
+        border-radius: 5px; 
+    }
+
+.derecha {
+    margin-left: 1.2%;
+}
+
+    .derecha img {
+        width: 100%; 
+        border-radius: 5px;
+    }
+
+.terciario {
+    margin-top: 5%;
+    width: 70%;
+    margin-left: 15%;
+    margin-right: 15%;
+    margin-bottom: 8%;
+    display: flex;
+}
+
+    .terciario div {
+        width: 33%;
+        padding: 2%;
+        text-align: center;
+    }
+
+        .terciario div a img {
+            width: 100%;
+            margin-bottom: 2rem;
+        }
+
+.pie {
+    background-color: #1a1a1a;  
+    padding: 2.5%;
+    color: #999;
+    text-align: center;
+}
+
+.contenedor-pie {
+    width: 100%;
+    margin: 0 auto;
+    padding: 0 5%;
+}
+
+.social-media {
+    margin-bottom: 2%;
+}
+
+.social-link {
+    color: #fff;
+    margin: 0 1.5%;
+    font-size: 200%;
+    text-decoration: none;
+    transition: color 0.3s;
+}
+
+    .social-link:hover {
+        color: #d4af37;  
+    }
+
+.pie-links {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 1.2em;
+    margin-bottom: 1%;
+}
+
+    .pie-links a {
+        color: #fff;
+        text-decoration: none;
+        transition: color 0.3s;
+    }
+
+        .fpie-links a:hover {
+            color: #d4af37;  
+        }
+
+.pie-legal {
+    font-size: 90%;
+}
+
+    .pie-legal a {
+        color: #999;
+        text-decoration: none;
+        transition: color 0.3s;
+    }
+
+        .pie-legal a:hover {
+            color: #d4af37;  
+        }
+
+/*PAGINA DE PERSONAJES*/
+
+.principal_personajes {
+    width: 100%;
+    height: 72vh;
+    display: flex;
+}
+
+    .div_primero {
+        width: 100%;
+        height: auto;
+        background-image: url(../images/personajes/personajes.jpg);
+        background-size: cover;
+        background-repeat: no-repeat;
+        justify-content: center;
+        align-items: center;
+        display: flex;
+    }
+
+        .div_segundo {
+            display: flex-block;
+            justify-content: center;
+            align-items: center;
+        }
+
+            .div_segundo h1 {
+                color: #d4af37;
+                font-size: 5.5rem;
+            }
+
+.primer_tipo {
+    display: flex;
+    align-items: center;
+    margin-top: 1%;
+    margin-bottom: 1%;
+    padding: 5%;
+    background-color: #999;
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+.imagen_primer_tipo {
+    flex: 1;
+    text-align: center;
+}
+
+    .imagen_primer_tipo img {
+        width: 80%;
+        height: 80%;
+        border-radius: 50%;
+        object-fit: cover;
+    }
+
+.informacion_primer_tipo {
+    flex: 2;
+    padding: 1.5%;
+}
+
+    .informacion_primer_tipo h2 {
+        margin-top: 0;
+        font-size: 200%;
+    }
+
+    .informacion_primer_tipo p {
+        font-size: 100%;
+        line-height: 1.5;
+    }
+
+.segundo_tipo {
+    display: flex;
+    align-items: center;
+    margin-top: 1%;
+    margin-bottom: 1%;
+    padding: 5%;
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+.imagen_segundo_tipo {
+    flex: 1;
+    text-align: center;
+}
+
+    .imagen_segundo_tipo img {
+        width: 80%;
+        height: 80%;
+        border-radius: 50%;
+        object-fit: cover;
+    }
+
+.informacion_segundo_tipo {
+    flex: 2;
+    padding: 1.5%;
+}
+
+    .informacion_segundo_tipo h2 {
+        margin-top: 0;
+        font-size: 200%;
+        color: #d4af37;
+    }
+
+    .informacion_segundo_tipo p {
+        font-size: 100%;
+        line-height: 1.5;
+        color: #d4af37;
+    }
+
+/*GALERIA*/
+
+.titulo {
+    font-size: 200%;
+    padding: 5%;
+    color: #000000;
+    background-color: #d4af37;
+    margin-bottom: 3%
+}
+
+.estilo_galeria {
+    margin-top: 1%;
+    width: 70%;
+    margin-left: 15%;
+    margin-right: 15%;
+    margin-bottom: 1%;
+    display: flex;
+}
+
+    .estilo_galeria div {
+        width: 33%;
+        padding: 1%;
+        text-align: center;
+    }
+
+        .estilo_galeria div a img {
+            width: 100%;
+            margin-bottom: 1rem;
+        }
+
+/*PAGINA DE CONTACTO*/
+
+.contacto {
+    max-width: 32%;
+    margin: 3% auto;
+    padding: 2%;
+    background-color: #fff;
+    border-radius: 10px;
+}
+
+    .contacto h1 {
+        margin-bottom: 5%;
+    }    
+
+    .contacto p {
+        margin-bottom: 7%;
+        font-size: 113%;
+        color: #000000;
+        text-align: center;
+    }
+
+.form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.form-group {
+    text-align: left;
+    color: #000000;
+}
+
+    .form-group label {
+        display: block;
+        margin-bottom: 1%;
+        font-weight: bold;
+    }
+
+input, textarea {
+    width: 100%;
+    padding: 2%;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 100%;
+}
+
+    input:focus, textarea:focus {
+        border-color: #007BFF;
+        outline: none;
+    }
+
+button {
+    padding: 3% 4%;
+    background-color: #007BFF;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    font-size: 120%;
+    cursor: pointer;
+    transition: background 0.3s;
+}
+
+    button:hover {
+        background-color: #0056b3;
+    }
+
+/*SOBRE SAMCRO PAGINA*/
+
+.principal_samcro {
+    width: 100%;
+    height: 72vh;
+    display: flex;
+}
+
+    .principal_samcro div {
+        width: 100%;
+        height: auto;
+        background-image: url(../images/SAMCRO/inicio1x.jpg);
+        background-size: cover;
+        background-repeat: no-repeat;
+        justify-content: center;
+        align-items: center;
+        display: flex;
+    }
+
+.contenido {
+    padding: 1%;
+    max-width: 60%;
+    margin: auto;
+}
+
+    .contenido p {
+        margin-top: 1%;
+        margin-right: 1%;
+        margin-bottom: 1%;
+    }
+
+    .contenido h3 {
+        margin-top: 2%;
+        margin-right: 2%;
+        margin-bottom: 2%;
+        color: #d4af37;
+    }
+
+    .contenido h2 {
+        margin-bottom: 1%;
+        color: #d4af37;
+    }
+
+.contenido-seccion {
+    margin-bottom: 5%;
+    padding: 1%;
+}
+
+    .contenido-seccion img {
+        width: 100%;
+        border-radius: 10px;
+        margin-bottom: 1%;
+    }
+
+.distinto {
+    background-color: #222;
+    padding: 3%;
+    border-radius: 10px;
+}
+
+.filiales {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 20px;
+}
+
+.filial {
+    text-align: center;
+    background-color: #333;
+    padding: 15px;
+    border-radius: 8px;
+}
+
+    .filial img {
+        width: 100%;
+        border-radius: 5px;
+        margin-bottom: 5%;
+    }
+
+.negocios {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 20px;
+}
+
+.negocio {
+    text-align: center;
+    background-color: #333;
+    padding: 8%;
+    border-radius: 8px;
+}
+
+    .negocio img {
+        width: 100%;
+        border-radius: 5px;
+        margin-bottom: 4%;
+    }
+
+/*BANDA SONORA PAGINA*/
+
+.soundtrack {
+    background-color: #222;
+    border-radius: 10px;
+    margin-bottom: 3%;
+    padding: 2%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.soundtrack ul {
+    list-style-type: none;
+    text-align: left;
+    padding: 0;
+    width: 80%;
+}
+
+    .soundtrack ul li {
+        background-color: #333;
+        margin: 1% 0;
+        padding: 2%;
+        border-radius: 5px;
+    }
+
+    .soundtrack a:hover {
+        color: #d4af37;
+    }
+
+/*GENERAL*/
+
+h4 {
+    font-size: 1.5rem;
+    text-transform: uppercase;
+}
+
+h1 {
+    text-align: center;
+}
+
+p {
+    margin-top: 1%;
+}

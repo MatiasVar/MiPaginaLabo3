@@ -8,8 +8,8 @@
     <link href="https://fonts.googleapis.com/css2?family=Rubik&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="css/estilos.css">
-    <title>Sons of Anarchy</title>
-    <link rel="icon" href="images/icono.ico" class="iconcss">
+    <title>Banda Sonora - Sons of Anarchy</title>
+    <link rel="icon" href="images/icono.png" class="iconcss">
 </head>
 <body>
     <header>
@@ -133,7 +133,7 @@
                 <a href="index.html">Inicio</a>
                 <a href="personajes.html">Personajes</a>
                 <a href="temporadas.html">Temporadas</a>
-                <a href="samcro">Club SAMCRO</a>
+                <a href="samcro.html">Club SAMCRO</a>
                 <a href="galeria.html">Galería</a>
                 <a href="contacto.html">Contacto</a>
             </div>
@@ -145,5 +145,16 @@
             </div>
         </div>
     </footer>
+    <script>
+        document.querySelector('.icon').addEventListener('click', () => {
+            const nav = document.querySelector('nav ul');
+            if (nav.style.display === 'block') {
+                nav.style.display = 'none';
+            } else {
+                nav.style.display = 'block';
+                nav.style.flexDirection = 'column';
+            }
+        });
+    </script>
 </body>
 </html>

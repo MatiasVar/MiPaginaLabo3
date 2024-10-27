@@ -9,7 +9,7 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="css/estilos.css">
     <title>Sons of Anarchy</title>
-    <link rel="icon" href="images/icono.ico" class="iconcss">
+    <link rel="icon" href="images/icono.png" class="iconcss">
 </head>
 <body>
     <header>
@@ -65,7 +65,7 @@
                 </a>
             </div>
             <div>
-                <a href="#">
+                <a href="temporadas.html">
                     <img src="images/season1.jpg" alt="Poster de la temporada 1">
                     <h4>Temporada 1</h4>
                 </a>
@@ -80,7 +80,7 @@
     </section>
     <footer class="pie">
         <div class="contenedor-pie">
-             <!--Sección de Redes Sociales--> 
+            <!--Sección de Redes Sociales-->
             <div class="social-media">
                 <a href="#" class="social-link"><i class="fa fa-facebook"></i></a>
                 <a href="https://x.com/sonsofanarchy?lang=es" class="social-link" target="_blank"><i class="fa fa-twitter"></i></a>
@@ -88,23 +88,33 @@
                 <a href="https://www.youtube.com/c/sonsofanarchy" class="social-link" target="_blank"><i class="fa fa-youtube"></i></a>
             </div>
 
-             <!--Sección de Enlaces Rápidos--> 
+            <!--Sección de Enlaces Rápidos-->
             <div class="pie-links">
                 <a href="index.html">Inicio</a>
                 <a href="personajes.html">Personajes</a>
                 <a href="temporadas.html">Temporadas</a>
-                <a href="samcro">Club SAMCRO</a>
+                <a href="samcro.html">Club SAMCRO</a>
                 <a href="galeria.html">Galería</a>
                 <a href="contacto.html">Contacto</a>
             </div>
 
-             <!--Información Legal--> 
+            <!--Información Legal-->
             <div class="pie-legal">
                 <p>&copy; 2024 Sons of Anarchy. Todos los derechos reservados.</p>
                 <p><a href="#">Política de privacidad</a> | <a href="#">Términos de uso</a></p>
             </div>
         </div>
     </footer>
-
+    <script>
+        document.querySelector('.icon').addEventListener('click', () => {
+            const nav = document.querySelector('nav ul');
+            if (nav.style.display === 'block') {
+                nav.style.display = 'none';
+            } else {
+                nav.style.display = 'block';
+                nav.style.flexDirection = 'column';
+            }
+        });
+    </script>
 </body>
 </html>

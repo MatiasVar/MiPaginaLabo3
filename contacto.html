@@ -9,7 +9,7 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="css/estilos.css">
     <title>Contacto - Sons of Anarchy</title>
-    <link rel="icon" href="images/icono.ico" class="iconcss">
+    <link rel="icon" href="images/icono.png" class="iconcss">
     <link href="css/lightbox.css" rel="stylesheet" />
 </head>
 <body>
@@ -34,19 +34,19 @@
         <h1 class="titulo">CONTACTO</h1>
         <p>¡Nos encantaría saber de ti! Llena el formulario a continuación y nos pondremos en contacto contigo lo antes posible.</p>
         <form class="form">
-            <div class="form-group">
+            <div class="form-grupo">
                 <label for="name">Nombre</label>
                 <input type="text" id="name" name="name" required>
             </div>
-            <div class="form-group">
+            <div class="form-grupo">
                 <label for="email">Correo Electrónico</label>
                 <input type="email" id="email" name="email" required>
             </div>
-            <div class="form-group">
+            <div class="form-grupo">
                 <label for="subject">Asunto</label>
                 <input type="text" id="subject" name="subject" required>
             </div>
-            <div class="form-group">
+            <div class="form-grupo">
                 <label for="message">Mensaje</label>
                 <textarea id="message" name="message" rows="5" required></textarea>
             </div>
@@ -68,7 +68,7 @@
                 <a href="index.html">Inicio</a>
                 <a href="personajes.html">Personajes</a>
                 <a href="temporadas.html">Temporadas</a>
-                <a href="samcro">Club SAMCRO</a>
+                <a href="samcro.html">Club SAMCRO</a>
                 <a href="galeria.html">Galería</a>
                 <a href="contacto.html">Contacto</a>
             </div>
@@ -80,5 +80,16 @@
             </div>
         </div>
     </footer>
+    <script>
+        document.querySelector('.icon').addEventListener('click', () => {
+            const nav = document.querySelector('nav ul');
+            if (nav.style.display === 'block') {
+                nav.style.display = 'none';
+            } else {
+                nav.style.display = 'block';
+                nav.style.flexDirection = 'column';
+            }
+        });
+    </script>
 </body>
 </html>

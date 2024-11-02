@@ -36,6 +36,7 @@ nav ul {
             nav ul li a:hover {
                 text-decoration: underline;
                 font-weight: 800;
+                color: #d4af37;
             }
 
 a {
@@ -47,6 +48,10 @@ a {
     display: none;
     font-size: 2rem;
     color: #FFFFFF;
+}
+
+#logo {
+    margin-top: 10px;
 }
 
 section {
@@ -89,7 +94,6 @@ section {
     padding: 3%;
     margin-left: 15%;
     margin-right: 15%;
-    text-align: center;
 }
 
 .izquierda {
@@ -302,6 +306,23 @@ section {
 
 /*GALERIA*/
 
+.principal_galeria {
+    width: 100%;
+    height: 72vh;
+    display: flex;
+}
+
+.div_primero_gale {
+    width: 100%;
+    height: auto;
+    background-image: url(../images/galeria/season2.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+}
+
 .titulo {
     font-size: 200%;
     padding: 5%;
@@ -332,6 +353,23 @@ section {
 
 /*PAGINA DE CONTACTO*/
 
+.principal_contacto {
+    width: 100%;
+    height: 72vh;
+    display: flex;
+}
+
+.div_primero_contacto {
+    width: 100%;
+    height: auto;
+    background-image: url(../images/contact.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+}
+
 .contacto {
     max-width: 32%;
     margin: 3% auto;
@@ -342,7 +380,11 @@ section {
 
     .contacto h1 {
         margin-bottom: 5%;
-    }    
+    }
+    
+    .contacto h2 {
+        text-align: center;
+    }
 
     .contacto p {
         margin-bottom: 7%;
@@ -496,6 +538,23 @@ button {
 
 /*BANDA SONORA PAGINA*/
 
+.principal_sonora {
+    width: 100%;
+    height: 72vh;
+    display: flex;
+}
+
+.div_primero_sonora {
+    width: 100%;
+    height: auto;
+    background-image: url(../images/banda.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+}
+
 .soundtrack {
     background-color: #222;
     border-radius: 10px;
@@ -524,7 +583,7 @@ button {
         color: #d4af37;
     }
 
-/*PAGINA TEMPORADA 1*/
+/*PAGINA TEMPORADA*/
 
 .principal_temp {
     width: 100%;
@@ -532,15 +591,27 @@ button {
     display: flex;
 }
 
-    .principal_temp div {
-        width: 100%;
-        height: auto;
-        background-image: url(../images/temporadas/temporada1.jpg);
-        background-size: cover;
-        background-repeat: no-repeat;
-        justify-content: center;
-        align-items: center;
-        display: flex;
+.div_primero_temp {
+    width: 100%;
+    height: auto;
+    background-image: url(../images/temporadas/temporada1.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+}
+
+.temporadax {
+    display: flex-block;
+    justify-content: center;
+    align-items: center;
+    padding: 2%;
+    text-align: center;
+}
+
+    .temporadax h2 {
+        font-size: 2rem;
     }
 
 .episodios {
@@ -553,22 +624,11 @@ button {
     align-items: center;
 }
 
-    .episodios h2 {
-        font-size: 150%;
-        margin-bottom: 1%;
+    .episodios h4 {
+        font-size: 1.5rem;
+        text-transform: uppercase;
         color: #d4af37;
-    }
-
-.episode-list {
-    padding: 40px;
-    max-width: 1200px;
-    margin: auto;
-}
-
-    .episode-list h2 {
-        text-align: center;
-        font-size: 28px;
-        margin-bottom: 30px;
+        margin-bottom: 2%;
     }
 
 .episode {
@@ -582,6 +642,28 @@ button {
         font-size: 20px;
         color: #d4af37;
         margin-bottom: 10px;
+    }
+
+.volver_arriba {
+    display: none;
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    background-color: #d4af37;
+    color: #1a1a1a;
+    padding: 10px 15px;
+    border-radius: 50%;
+    text-align: center;
+    font-size: 24px;
+    font-weight: bold;
+    text-decoration: none;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
+    z-index: 1000;
+    transition: opacity 0.3s;
+}
+
+    .volver_arriba:hover {
+        background-color: #b08a2a;
     }
 
 /*GENERAL*/
@@ -599,6 +681,7 @@ p {
     margin-top: 1%;
 }
 
+
 /*RESPONSIVE*/
 
 @media (max-width: 768px) {
@@ -610,6 +693,11 @@ p {
 
     .bienvenida, .terciario, .pie, .contacto {
         padding: 20px; 
+    }
+
+    .principal div, div_primero_contacto, .div_primero_sonora, .principal_samcro div, .div_primero_gale, .div_primero_temp, .div_primero{
+        background-position: center; 
+        background-size: cover;
     }
 
     .secundario {
@@ -625,8 +713,25 @@ p {
 
     .pie-links {
         flex-direction: column;
-        gap: 15px; 
+        gap: 15px;
+        text-align: center;
     }
+
+        .pie-links a {
+            padding: 10px 0; 
+            font-size: 1.2rem;
+        }
+
+    .social-media, .pie-legal {
+        margin-top: 20px; 
+        text-align: center; 
+    }
+
+    .social-link {
+        font-size: 2rem; 
+        margin: 0 15px; 
+    }
+
 
     .soundtrack ul li {
         margin: 10px 0; 
@@ -699,22 +804,33 @@ p {
     }
 
     .estilo_galeria {
-        flex-direction: column; 
-        width: 100%; 
-        padding-right: 90px; 
-        align-items: center; 
+        flex-direction: column;
+        display: grid;
+        align-items: center;
+        padding: 0 10px; 
+        box-sizing: border-box;
+        max-width: 100vw;
     }
 
         .estilo_galeria div {
-            width: 80%; 
-            margin: 0 auto 15px; 
+            width: 100%;
+            margin: 0;
         }
 
             .estilo_galeria div a img {
-                width: 100%; 
-                height: auto; 
-                border-radius: 5px; 
+                width: 100%;
+                height: auto;
+                border-radius: 5px;
+                display: block;
             }
+
+    .temporadax p{
+        text-align: initial;
+    }
+
+    .episodios p {
+        text-align: initial;
+    }
 }
 
 @media (max-width: 480px) {

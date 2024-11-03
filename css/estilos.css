@@ -800,7 +800,7 @@ p {
 
     .informacion_primer_tipo, .informacion_segundo_tipo {
         width: 100%; 
-        text-align: center; 
+        text-align: initial; 
     }
 
     .estilo_galeria {

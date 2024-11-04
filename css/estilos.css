@@ -841,6 +841,10 @@ p {
     .episodios p {
         text-align: initial;
     }
+
+    .contacto p {
+        text-align: initial;
+    }
 }
 
 @media (max-width: 480px) {
